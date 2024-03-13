@@ -22,7 +22,7 @@ def main(page: ft.Page) -> None:
     ]
 
     def return_weather(e):
-        key = '1a18751a19333f3cad6a1da2e54e2aca'
+        key = 'YOUR_API_KEY'
         city = city_input[0].value
         url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={key}'
         response = requests.get(url)
